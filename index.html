@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8">
+   <meta name="author" content="Ayyaan Faras">
+   <meta name="descripion" content="This is my Personal Protfolio Website which will showcase my skills & Projects">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Ayyaan | Portfolio</title>
+   <link rel="stylesheet" href="style.css">
+   <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+      integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+      crossorigin="anonymous" referrerpolicy="no-referrer" /> -->
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+   <!-- <script src="https://kit.fontawesome.com/0cdad60899.js" crossorigin="anonymous"></script> -->
+</head>
+
+<body>
+   <div id="header">
+      <div class="container">
+         <nav>
+            <img class="logoimg" src="images/logo.png" alt="logo">
+            <ul id="sidemenu">
+               <li><a href="#header">Home</a></li>
+               <li><a href="#about">About</a></li>
+               <li><a href="#services">Services</a></li>
+               <li><a href="#portfolio">Portfolio</a></li>
+               <li><a href="#contact">Contact</a></li>
+               <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+            </ul>
+            <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+         </nav>
+         <div class=" header-text">
+            <!-- <p>UI/UX Designer</p> -->
+            <h1>Hello! I am <span class="Name"">Ayyaan Faras</h1>
+               <!-- <p><span class=" lol">Computer Science Student</span></p> -->
+               <div class="desc" <span id="element"></span></div>
+         </div>
+      </div>
+   </div>
+   <!-- --------------About----------------- -->
+   <div id="about">
+      <div class="container">
+         <div class="row">
+            <div class="abt-col1">
+               <img src="images/user1.png" alt="">
+            </div>
+            <div class="abt-col2">
+               <h1 class="subtitle">About Me</h1>
+               <p><span>
+                     &nbsp;&nbsp;&nbsp;Hello, I'm Ayyaan Faras from Kolhapur city, currently staying in Pune, pursuing a
+                     Bachelors degree in Computer Engineering at PVG COET with aggregate GPA of <strong
+                        class="impo"><em>8.29</em></strong>. <br><br>
+                  </span>
+                  <span>
+                     &nbsp;&nbsp;&nbsp;My Preferred Programming language is <strong class="impo"><em>Java</em></strong>
+                     and i have knowledge of front-end technologies such as HTML, CSS, JavaScript, and <strong
+                        class="impo"><em>React.js</em></strong>.
+                     <!-- I also possess a foundational understanding of <strong class="impo"><em>SQL</em></strong>. <br><br> -->
+                  </span>
+                  <span>
+                     &nbsp;&nbsp;&nbsp;My strengths lie in <b><i>self-motivation</i></b>,
+                     <b><i>determination</i></b>, and
+                     <i>collaborative teamwork</i>, adapting swiftly to dynamic environments. Acknowledging my room for
+                     improvement, I am actively
+                     working on enhancing my English proficiency. <br><br>
+                  </span>
+                  <span>
+                     &nbsp;&nbsp;&nbsp;Outside the academic realm, I find joy in <b class="impo"><i>cycling</i></b>,
+                     <bclass="impo">
+                        </bclass><i>reading books</i></b>,
+                        immersing myself in <i class="impo">music</i>, and exploring the captivating world of <i
+                           class="impo">anime</i>. <br><br>
+                  </span>
+                  <span>
+                     &nbsp;&nbsp;&nbsp;Looking forward, my short-term goal is to
+                     secure a position in a reputable company, where I can further <strong class="impo"><em>develop my
+                           skills</em></strong>. In the
+                     long run, I
+                     aspire to <em class="impo">achieve a
+                        higher role within the same organization</em>, contributing meaningfully to its success.
+               </p>
+               </span>
+
+               <h2>Summary</h2>
+               <div class="tab-titles">
+                  <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                  <p class="tab-links" onclick="opentab('education')">Education</p>
+                  <p class="tab-links" onclick="opentab('projects')">Projects</p>
+               </div>
+               <div class="tab-contents active-tab" id="skills">
+                  <ul>
+                     <li><span>Programming</span><br>Java, C++</li>
+                     <li><span>Web Development:</span><br>Front-end Technologies like HTML, CSS, JS & React</li>
+                     <li><span>Soft Skills</span><br>Adaptability, Team Work, Leadership</li>
+                     <li><span>Tools</span><br>VS Code, IntelliJ Idea, MongoDB, Github, Netlify, Render</li>
+                  </ul>
+               </div>
+               <div class="tab-contents" id="education">
+                  <ul>
+                     <li><span>2017-2018:</span><br>Passed SSC with 80.60%</li>
+                     <li><span>2019-2020:</span><br>Passed HSC with 75.23% & Scored 94 percentile in JEE</li>
+                     <li><span>2021-present:</span><br>Persuing Bachelors Degree in Computer Engineering</li>
+                  </ul>
+               </div>
+               <div class="tab-contents" id="projects">
+                  <ul>
+                     <li><span>React:</span><br>Created a <a class="project-links"
+                           href="https://todo-list-ayyaan.netlify.app/">To Do App</a>
+                        using React</li>
+                     <li><span>Portfolio:</span><br>Created this Portfolio Website using HTML, CSS & JavaScript</li>
+                  </ul>
+               </div>
+            </div>
+         </div>
+      </div>
+   </div>
+
+
+   <!-- --------------Skills----------------- -->
+
+   <div id="Skills">
+      <div class="container">
+         <h1 class="subtitle">My Skills</h1>
+
+         <div class="skill">
+            <div class="skill-name">Core Java</div>
+            <div class="progress-bar">
+               <div class="progress" style="width: 75%;"></div>
+            </div>
+         </div>
+
+         <div class="skill">
+            <div class="skill-name">HTML-CSS</div>
+            <div class="progress-bar">
+               <div class="progress" style="width: 80%;"></div>
+            </div>
+         </div>
+
+         <div class="skill">
+            <div class="skill-name">Javascript</div>
+            <div class="progress-bar">
+               <div class="progress" style="width: 70%;"></div>
+            </div>
+         </div>
+
+      </div>
+   </div>
+
+
+
+
+   <!-- --------------Services----------------- -->
+   <!-- 
+   <div id="services">
+      <div class="container">
+         <h1 class="subtitle">My Services</h1>
+         <div class="services-list">
+            <div>
+               <i class="fa-solid fa-code fa-xl" style="color: #74C0FC;"></i>
+               <i class="fa-solid fa-joystick"></i>
+               <h2>Web Design</h2>
+               <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam, iste debitis qui dolorum
+                  blanditiis animi expedita, obcaecati sequi delectus perspiciatis nulla natus eos porro amet?</p>
+               <a href="#">Learn More</a>
+            </div>
+            <div>
+               <h2>Service 2</h2>
+               <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam, iste debitis qui dolorum
+                  blanditiis animi expedita, obcaecati sequi delectus perspiciatis nulla natus eos porro amet?</p>
+               <a href="#">Learn More</a>
+            </div>
+            <div>
+               <h2>Service 3</h2>
+               <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi sit aperiam a cumque, placeat
+                  accusantium reprehenderit enim aspernatur blanditiis harum natus aut molestias at! Hic?</p>
+               <a href="#">Learn More</a>
+            </div>
+         </div>
+      </div>
+   </div>
+ -->
+
+   <!-- -------------------------Portfolio---------------------- -->
+
+   <div id="portfolio">
+      <div class="container">
+         <div class="subtitle">My Projects</div>
+         <div class="worklist">
+            <div class="work">
+               <img src="images/work1.png" alt="">
+               <div class="layer">
+                  <h3>To-Do app</h3>
+                  <p>Simple React.js to-do list app showcasing task management with clean UI and intuitive
+                     functionality. Perfect for
+                     organizing daily tasks.</p>
+                  <a href="https://todo-list-ayyaan.netlify.app/" target="_blank"><i
+                        class="fa-solid fa-up-right-from-square" ;"></i></a>
+               </div>
+            </div>
+
+            <div class="work">
+               <img src="images/work2.png" alt="">
+               <div class="layer">
+                  <h3>Movie Booking app</h3>
+                  <p>Book movie tickets for new movies!! (not deployed yet...)</p>
+                  <a href="https://github.com/AyyaanFaras/MovieApp0"><i class="fa-solid fa-up-right-from-square"
+                        ;"></i></a>
+               </div>
+            </div>
+
+            <div class="work">
+               <img src="images/work3.png" alt="">
+               <div class="layer">
+                  <h3>Blog App</h3>
+                  <p>A blogging app where you can post pictures, create memories, and share with others
+                  </p>
+                  <a href="https://blog-app-4skp.onrender.com"><i class="fa-solid fa-up-right-from-square" ;"></i></a>
+               </div>
+            </div>
+         </div>
+         <a href="#portfolio" class="btn">See More</a>
+      </div>
+   </div>
+
+
+   <!-- --------------CONTACT-------------- -->
+
+
+   <div id="contact">
+      <div class="container">
+         <h1 class="subtitle">Contact Me</h1>
+         <div class="row">
+            <div class="contact-left">
+               <!-- <h1 class="subtitle">Contact Me</h1> -->
+
+               <!-- <p><i class="fa-solid fa-paper-plane"></i> contact@example.com</p>
+               <p><i class="fa-solid fa-mobile-screen"></i> 9876543210</p> -->
+
+               <img src="images/temp/connect.png" alt="" height="250px">
+
+               <div class="social-icons">
+                  <a href="https://twitter.com/ayyaanfaras"><i class="fa-brands fa-square-x-twitter"></i></a>
+                  <a href="https://github.com/ayyaanfaras"><i class="fa-brands fa-github"></i></a>
+                  <a href="https://www.linkedin.com/in/ayyaanfaras/"><i class="fa-brands fa-linkedin"></i></a>
+               </div>
+               <div>
+                  <!-- <a href="" class="btn btn2">My Resume</a> -->
+                  <a href="" class="btn btn2"> &nbsp;Download CV</a>
+               </div>
+            </div>
+            <div class="contact-right">
+               <form name="submit-to-google-sheet">
+                  <input type="text" name="Name" placeholder="Your Name" required>
+                  <input type="email" name="Email" placeholder="Your Email" required>
+                  <textarea name="Message" id="message" rows="6" placeholder="Your Message"></textarea>
+                  <button type="submit" class="btn btn2">Submit</button>
+               </form>
+               <span id="msg"></span>
+            </div>
+         </div>
+      </div>
+      <div class="copyright">Copyright &copy; Ayyaan Faras</div>
+   </div>
+
+
+
+
+
+
+
+   <!-- -----JAVASCRIPT FROM HERE------ -->
+
+   <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+
+   <script>
+      var tablinks = document.getElementsByClassName("tab-links");
+      var tabcontents = document.getElementsByClassName("tab-contents");
+      function opentab(tabname) {
+         for (tablink of tablinks) {
+            tablink.classList.remove("active-link");
+         }
+         for (tabcontent of tabcontents) {
+            tabcontent.classList.remove("active-tab");
+         }
+         event.currentTarget.classList.add("active-link");
+         document.getElementById(tabname).classList.add("active-tab");
+      }
+
+
+
+
+      var typed = new Typed('#element', {
+         strings: ['A Computer Science Student', 'A Java Programmer', 'Aspiring Web Developer'],
+         typeSpeed: 30,
+         showCursor: false,
+         loop: true,
+      });
+
+   </script>
+
+   <script>
+      var sidemenu = document.getElementById("sidemenu");
+
+      function openmenu() {
+         sidemenu.style.right = "0";
+      }
+
+      function closemenu() {
+         sidemenu.style.right = "-200px";
+      }
+   </script>
+
+   <script>
+      const scriptURL = 'https://script.google.com/macros/s/AKfycbyeUaXh8QHaQqzyUcQ4HQiAS-F6_WwLEBGMpNd0SqrLlwXHZ1v5Kjf2bziCEviW_T5S/exec'
+      const form = document.forms['submit-to-google-sheet']
+      const msg = document.getElementById('msg')
+
+      form.addEventListener('submit', e => {
+         e.preventDefault()
+         fetch(scriptURL, { method: 'POST', body: new FormData(form) })
+            .then(response => {
+               msg.innerHTML = "Message sent successfully"
+               setTimeout(function () {
+                  msg.innerHTML = ""
+               }, 3000)
+               form.reset()
+            })
+            .catch(error => console.error('Error!', error.message))
+      })
+   </script>
+</body>
+
+</html>
